@@ -2,10 +2,10 @@ import axios from 'axios';
 
 const url = 'http://localhost:8080/danh-muc';
 class DanhmucUrl{
-    getAll(){
-        return axios.get(url);
+    getAll(page, name, parent_name){
+        let num = page -1;
+        return axios.get(url + '?page=1' + '?name=' + name +'&parent_name='+ parent_name);
      }
-
      getDanhMucCha(){
          return axios.get(url +'/cha');
      }

@@ -12,7 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
        <Switch>
         <Route exact path="/" component={App} />
-        <Route path={["/danh-muc","/danh-muc/page"]} component={ListDanhmuc} />
+        <Route path="/danh-muc/:page" component={ListDanhmuc} />
         {/* <PrivateRoutes component={ListDanhmuc} authed={false} path='/admin'  /> */}
       </Switch>
       </BrowserRouter>
