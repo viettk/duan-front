@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ListDanhmuc from './Danhmuc/DanhmucQl/ListDanhmuc';
 import PrivateRoutes from './Auth/PrivateRoutes';
+import PageNotFound from './Auth/PageNotFound';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +14,9 @@ ReactDOM.render(
        <Switch>
         <Route exact path="/" component={App} />
         <Route path="/danh-muc/:page" component={ListDanhmuc} />
+        
         {/* <PrivateRoutes component={ListDanhmuc} authed={false} path='/admin'  /> */}
+        <Route exact path="*" component={PageNotFound} />
       </Switch>
       </BrowserRouter>
   </React.StrictMode>,

@@ -100,15 +100,18 @@ function ListDanhmuc(){
                     <tbody>
                         {
                             current.map(
-                                (result) =>
-                                <tr key={result.id}>
-                                    <td>{result.id}</td>
-                                    <td>{result.name}</td>
-                                    <td>{result.parent_name}</td>
-                                    <td>
-                                        <button onClick={() => getMa(result.id)} className="btn btn-primary" type="button" >Sửa</button>
-                                    </td>
-                                </tr>
+                                (result) =>                               
+                        
+                                    <tr key={result.id}>
+                        <td>{result.id}</td>
+                        <td>{result.name}</td>
+                        <td>{result.parent_name}</td>
+                        
+                        <td>
+                            <button onClick={() => getMa(result.id)} className="btn btn-primary" type="button" >Sửa</button>
+                        </td>
+                    </tr>
+                            
                             )
                         }
                     </tbody>
