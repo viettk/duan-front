@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $, { param } from 'jquery';
 import twbsPagination from 'jquery';
 import { Link, useParams } from 'react-router-dom';
+import './Page.css';
 
 function Pagenation({perPage, total, changePage, nextPage, prevPage,maxPageNumberLimit, minPageNumberLimit, currentPage, params}){
     const pageNumber = [];
@@ -30,8 +31,8 @@ function Pagenation({perPage, total, changePage, nextPage, prevPage,maxPageNumbe
                 {pageNumber.map(number =>{
                     if( number < maxPageNumberLimit+1 && number > minPageNumberLimit){
                         return(
-                            <li key={number} className='page-item'>
-                         <Link to={'/danh-muc/'+ number} onClick={() => changePage(number)} className='page-link'>{number}</Link>
+                            <li key={number} className='page-item' >
+                         <Link to={'/danh-muc/'+ number} onClick={() => changePage(number)} className={currentPage == number ? 'page-link active' : 'page-link'}>{number}</Link>
                      </li>
                         );
                     }
