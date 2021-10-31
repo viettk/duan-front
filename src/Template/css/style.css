@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    
+  }
+  #right{float:right;width:100px;margin-bottom: 1rem;}
+.time{
+    margin: 0;
+    padding: 0;
+}  
+.d-flexa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.information {
+    width: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .information .user-box {
+    position: relative; 
+    width: 100%;
+  }
+  .user-box {
+    margin-right: 10px;
+  }
+  .information .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: rgb(3, 3, 3);
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    background: transparent;
+  }
+  .information .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: .5s;
+    margin: 0;
+  }
+  form .user-box input{
+    width: 150px;
+  }
+  .information .user-box input:focus ~ label,
+  .information .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 14px;
+    margin: 0;
+  }
+.date-search  {
+      display: flex;
+  }
+  .input-search{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+  }
+/* .center{
+    width: 14%;
+    height: 50%;
+    margin: auto
+} */
+.btn-search{
+  margin-top: 15px;
+}
+.input-search-pr{
+      display: flex;
+      width: 40%;
+      margin: auto;
+      margin-bottom: 1rem;
+}
+#right{float:right;width:100px;margin-bottom: 1rem;}
+#right-total{float:right;width:250px;margin-bottom: 1rem; margin-top: 1rem;}
+#center{margin:0 auto; width: 350px ;display: flex ; justify-content: center; align-items: center; margin-top: 15px;}
+
+  .fluid{
+      width: 80px;
+      height: 80px;
+      margin-left: 5px;
+    }
+.form-pro{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.form-pro .user-box {
+  padding-right: 10px;
+}
+.user-box label{
+  margin-left: 1rem;
+}
+.status{
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  margin-left: 30px;
+  min-height: 300px;
+  }
+.status label{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  margin-top: 15px;
+  text-align: left;
+}
+.status span{
+  margin-left: 10px;
+}
+.status div{
+   margin: 5px; 
+}
+.status label:nth-child(1){
+  height: 70px;
+  width: 80px;
+}
+.status div:nth-child(2){
+  height: 70px;
+  width: 220px;
+}
+.status div:nth-child(3){
+  height: 70px;
+  width: 220px;
+}
+/* .h-form{
+  height: 300px;
+} */
+.description {
+   font-family: "Roboto", sans-serif;
+   color: #000;
+   margin: 30px;
+}
+.file-upload-child{
+  display: flex;
+  margin-left: 12px;
+}
+.img-bill img{
+  width: 50px;
+  height: 50px;
+}
+.product-bill{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  
+}
+.product-bill table tbody td  {
+  
+  margin: 0px;
+  font-size: 10px;
+}
+.detail-bill{
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(190, 177, 177, 0.5);
+  /* height: 300px; */
+}
+.detail-bill span p{
+  margin: 0;
+}
+.title{
+  text-align: center;
+  font-weight: bolder;
+  
+}.modal-dialog{
+  color: #000;
+}
+#father{
+  height: 300px;
+  overflow:auto;
+}
+.product-bill{
+  margin-bottom: 25px;
+}
+.thu{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.note{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nav-link span{
+  font-size: 18px;
+}
+.title-menu{
+  font-size: 18px;
+}
+.collapse-item{
+  font-size: 18px;
+}
+.upload{
+  margin-left: 10px;
+}
+.disable{
+  margin-left: 10px;
+}
+.reset{
+  margin-left: 10px;
+}
